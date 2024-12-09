@@ -40,7 +40,7 @@ function selectColor(event) {
 }
 
 
-const colorsPaletteItems = ["#fff", "#B0B0AF", "#B5E61D", "#92D25D", "#22B14C", "#FF553D", "#FFAEC9", "#C8BFE7", "#00A2E8", "#3F48CC", "#FFF200", "#FFB64E", "#000", "#FE70A7", "#A349A4", "#B97A57"];
+const colorsPaletteItems = ["#fff", "#B0B0AF", "#B5E61D", "#92D25D", "#22B14C", "#FF553D", "#FFAEC9", "#C8BFE7", "#00A2E8", "#3F48CC", "#FFF200", "#FFB64E", "#000", "#FE70A7", "#A349A4", "#B97A57", "rgba(255, 255, 255, 0)"];
 
 function createColorPaletteItems() {
     const itemsColor = [];
@@ -52,6 +52,18 @@ function createColorPaletteItems() {
         itemColor.style.backgroundColor = color;
         itemColor.classList.add("item-color");
         itemsColor.push(itemColor);
+
+        if (i == colorsPaletteItems.length - 1) {
+      // Set background image for the last element
+            itemColor.style.backgroundImage = "url('../img/clear_button.png')";
+            itemColor.style.backgroundSize = "cover";
+            itemColor.style.backgroundPosition = "center";
+            itemColor.style.border = "none";
+      // Ensure transparency with background-color
+            itemColor.style.backgroundColor = "rgba(255, 255, 255, 0)";  
+        } else {
+            itemColor.style.backgroundColor = color;
+        }
     }
     colorPalette.append(...itemsColor);
 }
