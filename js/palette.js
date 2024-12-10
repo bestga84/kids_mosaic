@@ -58,7 +58,7 @@ function createColorPaletteItems() {
             itemColor.style.backgroundImage = "url('../img/clear_button.png')";
             itemColor.style.backgroundSize = "cover";
             itemColor.style.backgroundPosition = "center";
-            itemColor.style.border = "none";
+            // itemColor.style.border = "none";
       // Ensure transparency with background-color
             itemColor.style.backgroundColor = "rgba(255, 255, 255, 0)";  
         } else {
