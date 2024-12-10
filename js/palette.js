@@ -6,7 +6,7 @@ createEmptyPaletteItems();
 
 function createEmptyPaletteItems() {
     const itemsEmpty = [];
-    for (let i = 0; i < 16; i++) {
+    for (let i = 0; i < 15; i++) {
         for (let j = 0; j < 15; j++) {
             const itemEmpty = document.createElement("button");
             itemEmpty.type = "button";
