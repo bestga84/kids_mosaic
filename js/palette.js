@@ -55,7 +55,7 @@ function createColorPaletteItems() {
 
         if (i == colorsPaletteItems.length - 1) {
       // Set background image for the last element
-            itemColor.style.backgroundImage = "url('../img/clear_button.png')";
+            itemColor.style.backgroundImage = "url('./img/clear_button.png')";
             itemColor.style.backgroundSize = "cover";
             itemColor.style.backgroundPosition = "center";
             // itemColor.style.border = "none";
